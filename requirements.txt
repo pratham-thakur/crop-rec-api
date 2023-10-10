@@ -1,5 +1,6 @@
 fastapi
 uvicorn
+guvicorn
 pydantic
 pickle5
 scikit-learn
