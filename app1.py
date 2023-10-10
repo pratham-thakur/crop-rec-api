@@ -28,9 +28,6 @@ class Crop_rec(BaseModel):
 # loading the saved model
 model = pickle.load(open('LogisticRegression.pkl', 'rb'))
 
-@app.get('/')
-def index():
-    return {'message': 'hello'}
 
 @app.post('/predict')
 def pred(input_parameters: Crop_rec):
