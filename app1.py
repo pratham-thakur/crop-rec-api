@@ -3,6 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import pickle
 import json
+import uvicorn
+import numpy as np
+import pandas as pd
 
 app = FastAPI()
 
@@ -26,7 +29,7 @@ class Crop_rec(BaseModel):
     rainfall: float
 
 # loading the saved model
-model = pickle.load(open('LogisticRegression.pkl', 'rb'))
+model = pickle.load(open('LogisticRegression.sav', 'rb'))
 
 
 @app.post('/predict')
