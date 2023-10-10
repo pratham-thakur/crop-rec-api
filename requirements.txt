@@ -32,7 +32,7 @@ fastjsonschema==2.16.3
 filelock==3.12.2
 Flask
 Flask-Cors==4.0.0
-fonttools==4.39.3
+fonttools
 fqdn==1.5.1
 gitdb==4.0.10
 GitPython==3.1.32
