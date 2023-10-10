@@ -6,3 +6,4 @@ pickle5
 scikit-learn
 numpy
 pandas
+json
